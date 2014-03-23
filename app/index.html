@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang='en' ng-app='gitdataApp'>
+    <head>
+        <title>Get Git Data</title>
+        <meta charset='UTF-8'>
+        <script src='lib/angular/angular.js'></script>
+        <script src='js/controllers.js'></script>
+    </head>
+    <body ng-controller='GitDataController'>
+        <ul>
+            <li ng-repeat='item in gitdata'>
+                {{item.title}} 
+                <div>{{item.state}}</div>
+            </li>
+        </ul>
+    </body>
+</html>
